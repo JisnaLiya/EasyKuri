@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart' hide Notification;
-import 'package:flutter_application_1/view/schemes1.dart/controller/controller.dart';
-import 'package:flutter_application_1/view/schemes1.dart/view/schemes.dart';
+import 'package:flutter_application_1/view/help_center/controller/controller.dart';
+import 'package:flutter_application_1/view/help_center/view/help_center.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-    //home: Schemes(),
-    getPages: [GetPage(name: "/schemes", page: () => Schemes(),binding: SchemesController())],
-    initialRoute: "/schemes",
+    //home: HelpCenter(),
+    getPages: [GetPage(name: "/hlepcenter", page: () => HelpCenter(),binding: HelpCenterController())],
+    initialRoute: "/hlepcenter",
       
     );
   }
